@@ -11,7 +11,7 @@ mongoose.Promise = global.Promise;
 //set up express app
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false })) // I added this. hayde kermel te2der testaamel req.bodys
 app.use(bodyParser.json());
 app.use('/api',routes)
 
